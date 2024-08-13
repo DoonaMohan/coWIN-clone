@@ -1,0 +1,872 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 14px / 20px Roboto, Helvetica Neue, sans-serif;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.app-header {
+  color: white;
+}
+.top-header {
+  background-color: #045d5d;
+  height: 50px;
+  display: flex;
+}
+
+.emblem img {
+  height: auto;
+  width: 20px;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+.emblem-title {
+  margin-top: 4px;
+}
+
+.bottom-header {
+  height: 70px;
+  background: #017e7e !important;
+  position: relative;
+}
+
+.language button {
+  color: white;
+  font-size: 14px;
+}
+
+.scrollable-dropdown-menu {
+  max-height: 200px;
+  overflow-y: auto;
+  line-height: 3em;
+  font-size: 14px;
+}
+.dropdown-menu {
+  background-color: #f0fdfd;
+  min-width: 294px;
+  overflow: auto;
+  z-index: 1;
+  border-top-left-radius: 19px;
+  border-bottom-left-radius: 19px;
+  box-shadow: 0 0 5px 2px rgba(42, 37, 73, 0.18);
+  font-size: 12px;
+}
+.dropdown-menu li p {
+  color: #017e7e;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+dropdown-menu li a:hover {
+  text-decoration: underline;
+}
+.loginbtn {
+  border: 1px solid white;
+  border-radius: 30px;
+}
+.loginbtn a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.zoom .btn {
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-active-bg: transparent;
+}
+
+.zoom .btn:hover {
+  color: white;
+}
+
+.navigation {
+  display: flex;
+
+  align-items: center;
+}
+.navigation .nav-item a {
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.navigation .show {
+  background-color: #fff;
+
+  position: absolute;
+  width: max-content;
+  top: 100%;
+  right: 0;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.navigation .show a {
+  color: #333;
+}
+.login:hover {
+  color: rgb(240, 182, 58);
+}
+.navigation a:hover {
+  color: rgb(240, 182, 58);
+}
+.loginbtn:hover {
+  color: rgb(240, 182, 58);
+  border: 1px solid rgb(240, 182, 58);
+}
+
+.main-content {
+  background-image: url("https://www.cowin.gov.in/precaution_banner_bg_web.c656a76b28237d8fb924.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main-content-wrapper {
+  margin-left: 35px;
+  margin-right: 15px;
+}
+
+.view-more {
+  background: #fcbf02;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: #4d3b03;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  font-size: 13px;
+  border: 2px solid #fff;
+}
+
+.view-more:hover {
+  background: #fcbf02;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: #4d3b03;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  font-size: 13px;
+  border: 2px solid #fff;
+}
+
+.total-vaccinations {
+  display: flex;
+  align-items: center;
+}
+.vaccination-doses {
+  color: white;
+}
+
+.vaccination-doses p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.declaration {
+  padding-left: 70px;
+}
+.declaration-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 53px;
+  color: #000;
+}
+
+.declaration-content {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 30px;
+  padding-top: 40px;
+}
+
+.declaration-subtitle {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+.milestone {
+  width: 545px;
+  border: 1px solid #fd5428;
+  padding: 20px;
+  border-width: 5px;
+  border-radius: 10px;
+  line-height: 53px;
+}
+
+.milestone h3 {
+  color: #fd5428;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+.india-image {
+  background-color: white;
+}
+.india-image img {
+  height: auto;
+  width: 60%;
+  padding: 30px;
+}
+.support-wrapper {
+  position: fixed;
+  right: 0;
+
+  z-index: 10;
+  top: 250px;
+}
+.dropdown-support {
+  background-image: linear-gradient(90deg, #017e7e 80%, #0c6161);
+  color: #fff;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  max-width: 130px;
+  height: 55px;
+  box-shadow: 0 10px 10px -10px #333;
+  border-top-left-radius: 38px;
+  border-bottom-left-radius: 38px;
+}
+
+.support-text {
+  color: #0c6161;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+}
+.call-title {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  max-width: 130px;
+}
+.vaccination-starts {
+  background: linear-gradient(120deg, #007c7c 50%, #04c4c4 0);
+  height: 80px;
+}
+
+.vaccination-steps {
+  padding: 45px;
+  background-color: #edffff;
+}
+
+.vaccination-steps h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #007c7c;
+  margin-bottom: 50px !important;
+}
+
+.step {
+  flex: 1;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 30px #b5d8e2;
+}
+.step-number {
+  font-size: 14px;
+  color: #007c7c;
+  border: 1px solid #007c7c;
+  padding: 5px;
+  border-radius: 10px;
+  top: -16px;
+  position: absolute;
+  font-weight: 700;
+  background-color: #fff;
+  margin: auto;
+
+  width: 85px;
+  text-align: center;
+  left: 0 !important;
+  right: 0;
+}
+.steps {
+  margin: auto;
+  max-width: 750px;
+  display: flex;
+  align-items: center;
+}
+.card-holder {
+  background-color: white;
+  color: white;
+  border-radius: 10px;
+}
+
+.card-image img {
+  height: 85px;
+}
+
+.card-image {
+  overflow: hidden;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card-description {
+  background-color: #007c7c;
+  padding: 30px 25px;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #fff;
+  height: 165px;
+}
+
+.card-footer {
+  --bs-card-inner-border-radius: 10px;
+  height: 90px;
+  color: #2f4b6e;
+  font-size: 12px;
+  padding: 10px 45px 20px;
+  text-decoration: none;
+}
+
+.icon-chevron-right {
+  /* position: absolute; */
+  color: #02aeae;
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* top: 50%; */
+}
+
+.vaccination-center {
+  padding: 45px 0;
+  background-color: #fff;
+}
+
+.vaccination-center-tabs {
+}
+.vaccination-center-tabs ul li {
+  font-size: 22px;
+  font-weight: 700;
+  color: #02aeae;
+}
+.vaccination-center-search {
+}
+.search {
+  background-color: #007c7c !important;
+  font-size: 18px;
+  padding: 8px 30px;
+  border-radius: 50px !important;
+}
+.vaccination-center-title {
+  font-size: 32px;
+  color: #007c7c;
+  line-height: 40px;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.vaccination-center-content {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5a5a75;
+  margin-bottom: 15px;
+}
+.beta-text {
+  font-weight: 700;
+  color: #001f60;
+  text-transform: uppercase;
+  font-size: 14px;
+  background: #ffc002;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 2px 15px;
+  text-align: center;
+  margin: 10px auto auto;
+}
+.note-block {
+  padding: 20px 0 0;
+  font-size: 12px;
+}
+.book-slot a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #02aeae;
+}
+
+.covid-precaution {
+  background-color: white;
+}
+
+.card-header {
+  background-color: white;
+  border: 0;
+  color: #007c7c;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.1px;
+  line-height: 1.3;
+}
+
+.card-body {
+  font-size: 16px;
+  color: #0e1229;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+  max-width: 90%;
+}
+.card-footer {
+  background-color: white;
+}
+
+.bttn {
+  background: #007c7c;
+  border-radius: 25px;
+  padding: 0.75rem 2.95rem;
+  border: 0;
+  font-size: 16px;
+}
+.bttn a {
+  color: #fff;
+  text-decoration: none;
+}
+.report-side-effect {
+  padding: 45px 0;
+  background-color: #edffff;
+}
+
+.report-side-effect covid-content {
+  background-color: #edffff;
+  padding: 45px 0;
+}
+.children-vaccination {
+  padding: 45px 0;
+  background-color: white;
+}
+.list ul li {
+  font-size: 16px;
+  color: #0e1229;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+  position: relative;
+  width: 625px;
+}
+
+.list ul li::before {
+  position: absolute;
+  content: ".";
+  width: 8px;
+  height: 8px;
+  background-color: #27c6c6;
+  border-radius: 50%;
+  left: -7px;
+  top: 18px;
+}
+
+.vaccination-date-correction {
+  padding: 45px 0;
+  background-color: #edffff;
+}
+
+.precaution-dose {
+  padding: 45px 0;
+  background-color: white;
+}
+
+.vaccination-status {
+  padding: 45px 0;
+  background-color: #edffff;
+}
+
+.abha-benefits {
+  padding: 45px 0;
+  background-color: white;
+}
+
+.abha-benefits-title {
+  font-size: 32px;
+  color: #007c7c;
+  line-height: 40px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+.abha-benefits-content {
+  font-size: 16px;
+  color: #0e1229;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+  padding: 24px;
+}
+
+.abha-vedios a {
+  background: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  display: block;
+  border-radius: 8px;
+}
+.know-more {
+  margin-top: 15px;
+}
+.know-more a {
+  border: 2px solid #007c7c;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  background: #007c7c;
+  color: #fff;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.16078431372);
+}
+.raise-issue {
+  background-color: #007c7c;
+  padding: 45px 0 50px;
+}
+
+.raise-issue h1 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.raise-issue p {
+  color: #fff;
+}
+
+.raise-issue-card {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  line-height: 15px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.raise-issue-card-title a {
+  min-height: 40px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #007c7c;
+  font-size: 15px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.raise-issue-card-content {
+  line-height: 27px;
+  text-align: center;
+}
+
+.faq {
+  background-color: white;
+  padding: 45px 0 50px;
+}
+
+.faq h1 {
+  font-size: 32px;
+  color: #007c7c;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px !important;
+}
+
+.faq-text {
+  padding: 8px 15px;
+  color: #007c7c;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.faq-text:active {
+  padding: 8px 15px;
+  color: #007c7c;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: #007c7c;
+}
+.faq-text:hover {
+  padding: 8px 15px;
+  color: #007c7c;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.download a {
+  border: 2px solid #007c7c;
+  border-radius: 50px;
+  padding: 10px 30px;
+  min-width: 150px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #007c7c;
+}
+
+.faq-header {
+  background-color: #e9ffff;
+  border-radius: 27px 27px 0 0;
+  border-bottom: 2px solid rgb(177, 174, 174);
+  margin-bottom: 30px;
+  overflow-x: auto;
+  width: 800px;
+}
+
+.faq-contents {
+  overflow: auto;
+  background: #f6f6f6;
+  border-radius: 10px;
+  height: 300px;
+}
+#faqAccordion {
+  color: #0e1229;
+  font-size: 18px;
+  min-height: 40px;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+}
+.faq-contents h2 {
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 16px;
+  color: #282828;
+}
+
+.faq-answers {
+  line-height: 18px;
+  color: gray;
+  font-size: 14px;
+}
+
+.new-on-cowin {
+  padding: 45px 0;
+  background-color: #edffff;
+}
+
+.cowin-new-accordion {
+  width: 100%;
+}
+.cowin-new-accordion .accordion,
+.cowin-new-accordion .accordion-item {
+  border: 0;
+}
+
+.new-on-cowin h1 {
+  font-size: 32px;
+  color: #007c7c;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 30px !important;
+}
+
+.cowinNew-header {
+  color: #007c7c;
+  height: 100px;
+  padding-inline-start: 63px;
+  overflow-y: auto;
+}
+
+.cowinNew-header button {
+  color: #007c7c;
+  font-weight: bold;
+}
+.new-cowin-wrapper {
+  height: 300px;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.cowin-new-wrapper {
+  width: 100%;
+}
+.numbering {
+  background-color: white;
+  height: 100px;
+}
+.number {
+  color: #fff;
+  top: 30px;
+  left: 15px;
+  font-size: 20px;
+}
+.vaccination-drive {
+  background-color: white;
+  padding: 45px 0 50px;
+}
+.vaccination-drive h1 {
+  font-size: 32px;
+  color: #007c7c;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 30px !important;
+}
+.vaccines-text p {
+  color: #02aeae;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.vaccines-text h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  background: #007c7c;
+  border-radius: 4px;
+  padding: 10px 10px;
+  width: 200px;
+}
+.vaccination-drive img {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.dashboard a {
+  border: 2px solid #2e9595;
+  background-color: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  color: #2e9595;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.dashboard a:hover {
+  text-decoration: underline;
+  border: 2px solid #2e9595;
+  background-color: none;
+  color: #2e9595;
+}
+.partners {
+  background-color: #edffff;
+  padding: 45px 0 50px;
+}
+.partners h1 {
+  color: #007c7c;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.partner-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1607843137254902);
+  padding: 15px;
+  max-height: 63px;
+  min-height: 63px;
+  display: flex;
+  justify-content: center;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.view-mor a {
+  border: 2px solid #007c7c;
+  background-color: #007c7c;
+  border-radius: 50px;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.register-as-partner a {
+  border: 2px solid #007c7c;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px 30px;
+  color: #007c7c;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.app-footer {
+  background-color: #007c7c;
+  color: white;
+}
+.footer-child-heading {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: #99d9d9;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.footer-child-heading::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid #99d9d9;
+  width: 22px;
+  position: relative;
+  bottom: -4px;
+}
+.footer-child-links {
+  padding: 0;
+}
+
+.footer-child-links li {
+  padding: 4px 0;
+  list-style-type: none;
+}
+.footer-child-links a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.mini-footer {
+  background-color: #015158;
+  padding: 5px 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #007c7c;
+  border-radius: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #007c7c;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
